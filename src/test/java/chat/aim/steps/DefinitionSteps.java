@@ -141,7 +141,7 @@ public class DefinitionSteps {
 
     @And("^click on the \"([^\"]*)\" button$")
     public void clickOnTheButton(){
-    step.clickOnTheButton();getClass()
+    step.clickOnTheButton();
 
     }
 }
