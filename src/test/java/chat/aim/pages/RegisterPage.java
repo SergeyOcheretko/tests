@@ -65,12 +65,11 @@ public class RegisterPage extends PageObject {
     public void enterConfirmPasswordInThePasswordField(String confirmPassword) {
     $(Locators.ConfirmPasswordField).clear();
     $(Locators.ConfirmPasswordField).sendKeys(confirmPassword);
-
     }
 
-    public void clickOnTheButton() {
+
+    public void clickOnTheButtonSubmit() {
     $(Locators.SubmitButtonAuthorization).click();
     }
-
 }
 

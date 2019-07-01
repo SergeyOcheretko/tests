@@ -139,9 +139,9 @@ public class DefinitionSteps {
     step.enterConfirmPasswordInThePasswordField(confirmPassword);
     }
 
-    @And("^click on the \"([^\"]*)\" button$")
-    public void clickOnTheButton(){
-    step.clickOnTheButton();g
-
+    @Then("^click on the button Submit$")
+    public void clickOnTheButtonSubmit() {
+    step.clickOnTheButtonSubmit();
     }
+
 }

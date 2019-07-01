@@ -51,7 +51,7 @@ Scenario: 01.0009	Check for behavior to form login with a too short "Login"
    Then user click on the Submit button
    Then second registration page is opened
    Then enter valid confirmation code "213555"
-   Then enter login "s.ocheretko@aimprosoft.com" in the login field
+   Then enter login "SergeyOcheretko" in the login field
    Then enter password "qwerty12345" in the password field
    Then enter confirm password "qwerty12345" in the password field
-   Then user click on the Submit button
+   Then click on the button Submit

@@ -111,9 +111,9 @@ public class EndUserSteps {
     public void enterConfirmPasswordInThePasswordField(String confirmPassword) {
     registerPage.enterConfirmPasswordInThePasswordField(confirmPassword);
     }
-    @Step
-    public void clickOnTheButton() {
-    registerPage.clickOnTheButton();
+
+    public void clickOnTheButtonSubmit() {
+    registerPage.clickOnTheButtonSubmit();
     }
 }
 
