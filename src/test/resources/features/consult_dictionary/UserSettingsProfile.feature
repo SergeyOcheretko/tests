@@ -36,3 +36,4 @@ Feature: User Settings Profile
     When Must start with a (A-Za-z)...-alert is displayed below What I do field
     Then Save button should be disabled
 
+  Scenario:
