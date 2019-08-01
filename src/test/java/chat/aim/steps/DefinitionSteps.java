@@ -9,6 +9,8 @@ import cucumber.api.java.en.When;
 
 import chat.aim.steps.serenity.EndUserSteps;
 
+import java.net.URISyntaxException;
+
 public class DefinitionSteps {
 
 
@@ -32,7 +34,7 @@ public class DefinitionSteps {
     }
 
     @Given("^user go to the \"([^\"]*)\" page$")
-    public void userGoToThePage(String arg0) throws Throwable {
+    public void userGoToThePage(String arg0) {
         step.userGoToThePage(arg0);
     }
 
@@ -114,34 +116,273 @@ public class DefinitionSteps {
     }
 
     @Then("^register page is opened$")
-    public void registerPageIsOpened() { step.registerPageIsOpened();
+    public void registerPageIsOpened() {
+        step.registerPageIsOpened();
 
     }
 
 
     @Then("^enter valid confirmation code \"([^\"]*)\"$")
     public void enterValidConfirmationCode(String code) throws Throwable {
-    step.enterValidConfirmationCode(code);
+        step.enterValidConfirmationCode(code);
     }
 
     @Then("^enter login \"([^\"]*)\" in the login field$")
     public void enterLoginInTheLoginField(String login) {
-    step.enterLoginInTheLoginField(login);
+        step.enterLoginInTheLoginField(login);
     }
 
     @Then("^enter password \"([^\"]*)\" in the password field$")
     public void enterPasswordInThePasswordField(String password) {
-    step.enterPasswordInThePasswordField(password);
+        step.enterPasswordInThePasswordField(password);
     }
 
     @Then("^enter confirm password \"([^\"]*)\" in the password field$")
     public void enterConfirmPasswordInThePasswordField(String confirmPassword) {
-    step.enterConfirmPasswordInThePasswordField(confirmPassword);
+        step.enterConfirmPasswordInThePasswordField(confirmPassword);
     }
 
     @Then("^click on the button Submit$")
     public void clickOnTheButtonSubmit() {
-    step.clickOnTheButtonSubmit();
+        step.clickOnTheButtonSubmit();
     }
 
+
+    @And("^enter too short login \"([^\"]*)\" in the login field$")
+    public void enterTooShortLoginInTheLoginField(String LoginField) {
+        step.enterTooShortLoginInTheLoginField(LoginField);
+    }
+
+    @Then("^\"([^\"]*)\" a alert message displayed below the login field\\.$")
+    public void aAlertMessageDisplayedBelowTheLoginField(String AllertAboutTooShortLogin) {
+        step.aAlertMessageDisplayedBelowTheLoginField(AllertAboutTooShortLogin);
+    }
+
+
+    @And("^Log in page is opened$")
+    public void logInPageIsOpened() {
+        step.logInPageIsOpened();
+    }
+
+
+    @Given("^enter \"([^\"]*)\" in the Login field$")
+    public void enterInTheLoginField(String SignIn) {
+        step.enterInTheLoginField(SignIn);
+    }
+
+
+    @When("^enter password \"([^\"]*)\"$")
+    public void enterPassword(String signInPassword) {
+        step.enterPassword(signInPassword);
+    }
+
+    @And("^click on the Submit$")
+    public void clickOnTheSubmit() {
+        step.clickOnTheSubmit();
+    }
+
+
+    @And("^click on the user icon$")
+    public void clickOnTheUserIcon() {
+        step.clickOnTheUserIcon();
+    }
+
+    @And("^Wait until loading icon appears$")
+    public void waitUntilLoadingIconAppears() {
+        step.waitUntilLoadingIconAppears();
+    }
+
+
+    @And("^user pop-up should be opened in the Main block$")
+    public void userPopUpShouldBeOpenedInTheMainBlock() {
+        step.userPopUpShouldBeOpenedInTheMainBlock();
+    }
+
+    @And("^click on the 'Sign out' butoon in the drop-down menu$")
+    public void clickOnTheButoonInTheDropDownMenu() {
+        step.clickOnTheButoonInTheDropDownMenu();
+    }
+
+
+    @Then("^Sign in to Chat' page is opened$")
+    public void signInToChatPageIsOpened() {
+        step.signInToChatPageIsOpened();
+    }
+
+
+    @When("^'Login can't be empty' allert message is displayed$")
+    public void loginCanTBeEmptyAllertMessageIsDisplayed() {
+        step.loginCanTBeEmptyAllertMessageIsDisplayed();
+    }
+
+    @When("^'Password can't be empty' alert is displayed$")
+    public void passwordCanTBeEmptyAlertIsDisplayed() {
+        step.passwordCanTBeEmptyAlertIsDisplayed();
+    }
+
+    @And("^'Sign in' button should be not clickable$")
+    public void signInButtonShouldBeNotClickable() {
+        step.signInButtonShouldBeNotClickable();
+    }
+
+    @And("^'Unauthorized'  alert message displayed to be above the 'Sign in chat' title$")
+    public void unauthorizedAlertMessageDisplayedToBeAboveTheSignInChatTitle() {
+        step.unauthorizedAlertMessageDisplayedToBeAboveTheSignInChatTitle();
+    }
+
+    @And("^'Only latin symbols can be used' alert is displayed$")
+    public void onlyLatinSymbolsCanBeUsedAlertIsDisplayed() {
+        step.onlyLatinSymbolsCanBeUsedAlertIsDisplayed();
+    }
+
+    @When("^click on 'Remember me on this computer' link\\.$")
+    public void clickOnRememberMeOnThisComputerLink() {
+        step.clickOnRememberMeOnThisComputerLink();
+    }
+
+    @Given("^click on the 'Forgot your password\\?'link$")
+    public void clickOnTheForgotYourPasswordLink() {
+        step.clickOnTheForgotYourPasswordLink();
+    }
+
+    @When("^'Forgot Password' page should be opened$")
+    public void forgotPasswordPageShouldBeOpened() {
+        step.forgotPasswordPageShouldBeOpened();
+    }
+
+    @When("^click on the 'Send Reset Instructions' button$")
+    public void clickOnTheSendResetInstructionsButton() {
+        step.clickOnTheSendResetInstructionsButton();
+    }
+
+    @When("^'Aimprosoft Chat Recovery Password' page should be opened$")
+    public void aimprosoftChatRecoveryPasswordPageShouldBeOpened() {
+    step.aimprosoftChatRecoveryPasswordPageShouldBeOpened();
+
+    }
+
+
+    @When("^enter \"([^\"]*)\" in the 'Generated Password' field$")
+    public void enterInTheGeneratedPasswordField(String GeneratedPassword){
+    step.enterInTheGeneratedPasswordField(GeneratedPassword);
+    }
+
+    @When("^enter \"([^\"]*)\" in the \"([^\"]*)\" field$")
+    public void enterInTheField(String data, String field){
+        step.enterInTheField(data, field);
+    }
+
+    @When("^repeat \"([^\"]*)\" in the 'Password' field$")
+    public void repeatInThePasswordField(String repeatPassword){
+    step.repeatInThePasswordField(repeatPassword);
+
+    }
+
+    @And("^click on the 'Use Generated Pass' button$")
+    public void clickOnTheUseGeneratedPassButton() {
+    step.clickOnTheUseGeneratedPassButton();
+    }
+
+
+    @Given("^click on the 'Profile' button$")
+    public void clickOnTheProfileButton() {
+    step.clickOnTheProfileButton();
+    }
+
+    @When("^'Edit your profile' title should be opened$")
+    public void editYourProfileTitleShouldBeOpened() {
+    step.editYourProfileTitleShouldBeOpened();
+    }
+
+
+    @When("^enter \"([^\"]*)\" in the 'First name' field$")
+    public void enterInTheFirstNameField(String FirstNameField){
+    step.enterInTheFirstNameField(FirstNameField);
+    }
+
+    @When("^enter \"([^\"]*)\" in the 'Last name' field$")
+    public void enterInTheLastNameField(String LastNameField){
+     step.enterInTheLastNameField(LastNameField);
+    }
+
+    @When("^enter \"([^\"]*)\" in the 'Phone number' field$")
+    public void enterInThePhoneNumberField(String PhoneNumberField){
+     step.enterInThePhoneNumberField(PhoneNumberField);
+    }
+
+    @When("^enter \"([^\"]*)\" in the 'Skype' field$")
+    public void enterInTheSkypeField(String skypeField){
+    step.enterInTheSkypeField(skypeField);
+    }
+
+    @When("^enter \"([^\"]*)\" in the 'What I do' field$")
+    public void enterInTheWhatIDoField(String WhatIDoField){
+    step.enterInTheWhatIDoField(WhatIDoField);
+    }
+
+    @When("^enter \"([^\"]*)\" in the 'Where I Am' field$")
+    public void enterInTheWhereIAmField(String whereIAmfield){
+    step.enterInTheWhereIAmField(whereIAmfield);
+    }
+
+    @When("^change time zone in the 'Time Zone' drop-down menu$")
+    public void changeTimeZoneInTheTimeZoneDropDownMenu() {
+    step.changeTimeZoneInTheTimeZoneDropDownMenu();
+    }
+
+    @When("^click on the 'Save' button$")
+    public void clickOnTheSaveButton() {
+    step.clickOnTheSaveButton();
+    }
+
+    @And("^data should be saved$")
+    public void dataShouldBeSaved() {
+    step.dataShouldBeSaved();
+    }
+
+
+    @When("^Select file \"([^\"]*)\" for Avatar$")
+    public void selectFileForAvatar(String file) throws URISyntaxException {
+    step.selectFileForAvatar(file);
+    }
+
+    @When("^click on 'Save' button$")
+    public void clickOnSaveButton() {
+    step.clickOnSaveButton();
+    }
+
+    @When("^Should be 3 characters or more\\.-alert is displayed below FirstName field$")
+    public void shouldBeCharactersOrMoreAlertIsDisplayedBelowFirstNameField() {
+    step.shouldBeCharactersOrMoreAlertIsDisplayedBelowFirstNameField();
+    }
+
+    @When("^Should be 3 characters or more\\.-alert is displayed below LastName field$")
+    public void shouldBeCharactersOrMoreAlertIsDisplayedBelowLastNameField() {
+    step.shouldBeCharactersOrMoreAlertIsDisplayedBelowLastNameField();
+    }
+
+
+    @When("^Phone number should include from 3 to 20 digits without special symbols-alert is displayed below Phone field$")
+    public void phoneNumberShouldIncludeFromToDigitsWithoutSpecialSymbolsAlertIsDisplayedBelowPhoneField() {
+    step.phoneNumberShouldIncludeFromToDigitsWithoutSpecialSymbolsAlertIsDisplayedBelowSkypeField();
+    }
+
+    @When("^Must start with a \\(A-Za-z\\)\\.\\.\\.-alert is displayed below Skype field$")
+    public void mustStartWithAAZaZAlertIsDisplayedBelowSkypeField() {
+    step.mustStartWithAAZaZAlertIsDisplayedBelowSkypeField();
+    }
+
+    @When("^Must start with a \\(A-Za-z\\)\\.\\.\\.-alert is displayed below What I do field$")
+    public void mustStartWithAAZaZAlertIsDisplayedBelowWhatIDoField() {
+    step.mustStartWithAAZaZAlertIsDisplayedBelowWhatIDoField();
+    }
+
+    @Then("^Save button should be disabled$")
+    public void saveButtonShouldBeDisabled() {
+    step.saveButtonShouldBeDisabled();
+    }
 }
+
+
+
+
