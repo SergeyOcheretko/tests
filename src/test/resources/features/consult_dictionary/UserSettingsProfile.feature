@@ -1,8 +1,8 @@
 Feature: User Settings Profile
   Background:
-    Given user go to the "https://chat-demo.aimprosoft.com/index.html#/chat/4" page
-    When  enter "sergej.ocheretko1@gmail.com" in the Login field
-    When  enter password "qwerty12345"
+    Given user go to the "https://chat-demo.aimprosoft.com" page
+    When  enter "testuser1@email.com" in the Login field
+    When  enter password "qwerty1"
     And click on the Submit
     And Wait until loading icon appears
     And click on the user icon
@@ -36,4 +36,3 @@ Feature: User Settings Profile
     When Must start with a (A-Za-z)...-alert is displayed below What I do field
     Then Save button should be disabled
 
-  Scenario:
