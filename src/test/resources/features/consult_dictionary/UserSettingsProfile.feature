@@ -1,6 +1,6 @@
 Feature: User Settings Profile
   Background:
-    Given user go to the "https://192.168.217.23/index.html#/login" page
+    Given user go to the "https://chat-demo.aimprosoft.com/index.html#/chat/4" page
     When  enter "sergej.ocheretko1@gmail.com" in the Login field
     When  enter password "qwerty12345"
     And click on the Submit
