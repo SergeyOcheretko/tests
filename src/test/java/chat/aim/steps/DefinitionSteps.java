@@ -210,12 +210,12 @@ public class DefinitionSteps {
     }
 
 
-    @When("^'Login can't be empty' allert message is displayed$")
+    @When("^'Login is required' allert message is displayed$")
     public void loginCanTBeEmptyAllertMessageIsDisplayed() {
         step.loginCanTBeEmptyAllertMessageIsDisplayed();
     }
 
-    @When("^'Password can't be empty' alert is displayed$")
+    @When("^'Password is required' alert is displayed$")
     public void passwordCanTBeEmptyAlertIsDisplayed() {
         step.passwordCanTBeEmptyAlertIsDisplayed();
     }
@@ -381,6 +381,12 @@ public class DefinitionSteps {
     public void saveButtonShouldBeDisabled() {
     step.saveButtonShouldBeDisabled();
     }
+
+    @When("^click on the Login field$")
+    public void clickOnTheLoginField() {
+    step.clickOnTheLoginField();
+    }
+
 }
 
 

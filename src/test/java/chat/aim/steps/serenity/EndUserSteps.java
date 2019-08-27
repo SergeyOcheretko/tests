@@ -317,4 +317,8 @@ private DictionaryPage dictionaryPage;
     public void saveButtonShouldBeDisabled() {
     Assert.assertFalse("Save button should be disabled",userSettingsProfile.saveButtonShouldBeDisabled());
     }
+
+    public void clickOnTheLoginField() {
+    userSettingsProfile.clickOnTheLoginField();
+    }
 }

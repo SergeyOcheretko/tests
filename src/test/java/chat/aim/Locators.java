@@ -55,6 +55,7 @@ public interface Locators {
     String PhoneFieldPhoneNumberShouldIncludeFromToDigitsWithoutSpecialSymbolsAlertIsDisplayedBelowPhoneField="//div[contains(text(),'Phone number should include from 3 to 20 digits wi')]";
     String SkypeFieldMustStartWithAAZaZAlertIsDisplayedBelowSkypeField="//div[contains(text(),'Must start with a (A-Za-z)...')]";
     String WhatIDoFieldMustStartWithAAZaZ="//div[5]//div[1]//div[1]";
+    String LOginFieldInSignInToChat="//input[@placeholder='Login']";
 }
 
 

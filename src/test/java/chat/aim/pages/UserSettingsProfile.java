@@ -132,6 +132,11 @@ public class UserSettingsProfile extends PageObject {
     public boolean saveButtonShouldBeDisabled() {
     return $(Locators.saveButtonInEditProfile).isCurrentlyEnabled();
     }
+
+    public void clickOnTheLoginField() {
+    $(Locators.LOginFieldInSignInToChat).click();
+    }
+
 }
 
 
