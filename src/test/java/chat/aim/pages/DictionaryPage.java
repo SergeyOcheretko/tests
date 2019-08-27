@@ -29,10 +29,10 @@ public class DictionaryPage extends PageObject {
         lookupButton.click();
     }
 
-    public List<String> getDefinitions() {
-        WebElementFacade definitionList = find(By.tagName("ol"));
-        return definitionList.findElements(By.tagName("li")).stream()
-                             .map( element -> element.getText() )
-                             .collect(Collectors.toList());
-    }
+//    public List<String> getDefinitions() {
+//        WebElementFacade definitionList = find(By.tagName("ol"));
+//        return definitionList.findElements(By.tagName("li")).stream()
+//                             .map( element -> element.getText() )
+//                             .collect(Collectors.toList());
+//    }
 }

@@ -32,10 +32,10 @@ private DictionaryPage dictionaryPage;
         dictionaryPage.lookup_terms();
     }
 
-    @Step
-    public void should_see_definition(String definition) {
-        assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
-    }
+//    @Step
+//    public void should_see_definition(String definition) {
+//        assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
+//    }
 
     @Step
     public void is_the_home_page() {

@@ -28,10 +28,10 @@ public class DefinitionSteps {
         step.looks_for(word);
     }
 
-    @Then("they should see the definition '(.*)'")
-    public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
-        step.should_see_definition(definition);
-    }
+//    @Then("they should see the definition '(.*)'")
+//    public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
+//        step.should_see_definition(definition);
+//    }
 
     @Given("^user go to the \"([^\"]*)\" page$")
     public void userGoToThePage(String arg0) {
