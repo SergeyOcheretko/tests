@@ -50,6 +50,7 @@ private DictionaryPage dictionaryPage;
 
     @Step
     public void userGoToThePage(String arg0) {
+//        loginPage.open();
         registerPage.userGoToThePage(arg0);
     }
 

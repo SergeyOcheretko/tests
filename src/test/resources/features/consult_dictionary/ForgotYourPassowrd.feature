@@ -1,9 +1,9 @@
-Feature: Check on  "Forgot your password?" link.
+Feature: Check on Forgot your password? link.
   Background:
    Given user go to the "https://192.168.217.23/index.html#/login" page
 
 
-  Scenario: Check on  "Forgot your password?" link.
+  Scenario: 01.000 Check on  Forgot your password? link.
      Given click on the 'Forgot your password?'link
      When 'Forgot Password' page should be opened
      When enter email "sergej.ocheretko1@gmail.com" in the email field
