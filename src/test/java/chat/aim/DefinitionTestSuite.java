@@ -8,7 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions (features= {
         "src/test/resources/features/consult_dictionary/ForgotYourPassowrd.feature",
         "src/test/resources/features/consult_dictionary/LoginPage.feature",
+        "src/test/resources/features/consult_dictionary/RegisterPage.feature",
+        "src/test/resources/features/consult_dictionary/UserSettingsProfile.feature",
 },
+
         glue = "aim.chat")
 
 public class DefinitionTestSuite {
