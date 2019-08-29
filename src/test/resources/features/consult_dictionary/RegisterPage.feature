@@ -1,7 +1,7 @@
 Feature: testing registration page
 
   Scenario: 01.0001	Check the transition by "Register" button in menu authorization
-    Given user go to the "https://192.168.217.23/index.html#/login" page
+    Given user go to the "https://chat-demo.aimprosoft.com/index.html#/login" page
     Then login page is opened
     Then user click on the Register button
     And registration page is opened
