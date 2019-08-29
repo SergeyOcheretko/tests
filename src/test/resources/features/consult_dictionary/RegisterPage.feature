@@ -6,9 +6,6 @@ Feature: testing registration page
     Then user click on the Register button
     And registration page is opened
 
-
-
-
   Scenario: 01.0002	Check the transition by "Cancel" button in menu authorization
     Given user go to the "https://192.168.217.23/index.html#/registration" page
     Then registration page is opened
