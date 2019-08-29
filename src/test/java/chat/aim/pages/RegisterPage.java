@@ -6,10 +6,9 @@ import net.serenitybdd.core.pages.PageObject;
 public class RegisterPage extends PageObject {
     public void userGoToThePage(String arg0) {
 
-      getDriver().get(arg0);
+        getDriver().get(arg0);
 
     }
-
 
     public boolean loginPageIsOpened() {
         return $(Locators.REG_PAGE).isDisplayed();
