@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4673fd2d-5070-4f33-9d05-c8bd0d6be9a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-    </list>
+    <list default="true" id="4673fd2d-5070-4f33-9d05-c8bd0d6be9a7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +244,7 @@
       <workItem from="1566976219319" duration="1716000" />
       <workItem from="1566978111522" duration="3259000" />
       <workItem from="1566982199035" duration="3851000" />
-      <workItem from="1567063461628" duration="7532000" />
+      <workItem from="1567063461628" duration="7850000" />
     </task>
     <task id="LOCAL-00001" summary="MyFirstCommit">
       <created>1561992532413</created>
@@ -493,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567082446115</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Pipeline">
+      <created>1567082818464</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1567082818464</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
