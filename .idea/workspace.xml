@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4673fd2d-5070-4f33-9d05-c8bd0d6be9a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/consult_dictionary/RegisterPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/consult_dictionary/RegisterPage.feature" afterDir="false" />
-    </list>
+    <list default="true" id="4673fd2d-5070-4f33-9d05-c8bd0d6be9a7" name="Default Changelist" comment="Pipeline" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +242,7 @@
       <workItem from="1566976219319" duration="1716000" />
       <workItem from="1566978111522" duration="3259000" />
       <workItem from="1566982199035" duration="3851000" />
-      <workItem from="1567063461628" duration="2730000" />
+      <workItem from="1567063461628" duration="2976000" />
     </task>
     <task id="LOCAL-00001" summary="MyFirstCommit">
       <created>1561992532413</created>
@@ -449,7 +447,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567066306070</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Pipeline">
+      <created>1567069020189</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1567069020189</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Pipeline">
+      <created>1567069032372</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1567069032372</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -492,6 +504,7 @@
     <MESSAGE value="MySecondCommit" />
     <MESSAGE value="MyThirdCommit" />
     <MESSAGE value="MyCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyCommit" />
+    <MESSAGE value="Pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pipeline" />
   </component>
 </project>
