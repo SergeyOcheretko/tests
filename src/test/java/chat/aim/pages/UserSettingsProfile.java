@@ -1,6 +1,7 @@
 package chat.aim.pages;
 
 import chat.aim.Locators;
+import chat.aim.steps.WaitingForElements;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;

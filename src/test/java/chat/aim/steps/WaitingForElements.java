@@ -1,4 +1,4 @@
-package chat.aim.pages;
+package chat.aim.steps;
 
 import net.serenitybdd.core.pages.PageObject;
 import org.junit.rules.ExpectedException;

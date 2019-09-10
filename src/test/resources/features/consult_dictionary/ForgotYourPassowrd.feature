@@ -1,6 +1,6 @@
 Feature: Check on Forgot your password? link.
   Background:
-   Given user go to the "https://192.168.217.23/index.html#/login" page
+   Given user go to the "https://chat-demo.aimprosoft.com" page
 
 
   Scenario: 01.000 Check on  Forgot your password? link.

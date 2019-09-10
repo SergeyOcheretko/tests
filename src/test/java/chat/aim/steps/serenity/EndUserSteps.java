@@ -2,13 +2,13 @@ package chat.aim.steps.serenity;
 
 import chat.aim.Locators;
 import chat.aim.pages.*;
+import chat.aim.steps.WaitingForElements;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
 import java.net.URISyntaxException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItem;
 
 public class EndUserSteps {
